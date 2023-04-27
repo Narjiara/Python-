@@ -3,8 +3,10 @@ alunos = []
 for x in range (quantidade):
  alunos.append(input("digite o nome do aluno:"))
 
-for y in range(quantidade):
- print(alunos[y],y)
+checarNome = input("digite um nome para checar na lista:")
 
-
-print(alunos)
+for y in range (quantidade):
+ if checarNome==alunos[y]:
+     print(y, alunos[y])
+ else:
+     checarNome = input("nao esta na lista")
