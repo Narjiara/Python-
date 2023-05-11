@@ -1,5 +1,5 @@
 def produtos(produto,quantidade,valorUnitario):
-    return quantidade * valorUnitario
+    return quantidade * valorUnitario,produto
 
 p = produtos("fuba",40,3)
-print(f"o valor total do estoque : {p}")
+print(f"o produto {p[1]} custa: {p[0]}")
