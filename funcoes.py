@@ -36,4 +36,20 @@ def textoInverso(palavra):
     return cont, palavra_inverso
 
 
+def numerosUnicos (a):
+    nova_lsta=[]
+    for x in a:
+        if x not in nova_lsta:
+            nova_lsta.append(x)
+
+    print(nova_lsta)
+
+def numero_primo (num):
+    for x in range(2, num):
+      if num  % x == 0 :
+          return f"{num} nao é primo"
+    return f"{num} é primo"
+
+
+
 
