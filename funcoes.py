@@ -24,3 +24,16 @@ def inserir(prod,preco):
 
     produto.append(prod)
     pre.append(preco)
+
+def textoInverso(palavra):
+    cont = 0
+    palavra_inverso = ""
+    for x in palavra:
+        if x not in " ":
+         cont += 1
+    for i in range(cont):
+        palavra_inverso = palavra[i] + "" + palavra_inverso
+    return cont, palavra_inverso
+
+
+
