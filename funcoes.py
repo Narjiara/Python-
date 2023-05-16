@@ -48,7 +48,8 @@ def numero_primo (num):
     for x in range(2, num):
       if num  % x == 0 :
           return f"{num} nao é primo"
-    return f"{num} é primo"
+    if num != 1:
+      return f"{num} é primo"
 
 
 
