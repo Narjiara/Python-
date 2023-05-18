@@ -1,2 +1,2 @@
 from funcoes import numero_primo
-print(numero_primo(79))
+print(numero_primo(9))
