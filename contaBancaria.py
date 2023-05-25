@@ -16,6 +16,7 @@ class Conta:
 
        else:
            print(f'{self.saldo} saldo total')
+
    def sacar (self, valorsacar):
        self.saldo -= valorsacar
        if self.statusdaConta == True :
