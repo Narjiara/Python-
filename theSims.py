@@ -1,9 +1,9 @@
-class atleta:
+class Atleta:
     def __init__(self,peso):
         self.peso=peso
         self.aquecer=False
 
-class Corredor(atleta):
+class Corredor(Atleta):
 
     def __init__(self,peso):
         super(). __init__(peso)
@@ -22,7 +22,7 @@ class Corredor(atleta):
         else:
             print(f'nao esta correndo')
 
-class Nadador(atleta):
+class Nadador(Atleta):
     def __init__(self, peso):
         super().__init__(peso)
     def nadar(self,nadar):
@@ -39,7 +39,7 @@ class Nadador(atleta):
             self.nadar=False
         else:
             print(f'nao esta nadando')
-class Ciclista(atleta):
+class Ciclista(Atleta):
     def __init__(self, peso):
         super().__init__(peso)
     def bike(self):
@@ -56,5 +56,5 @@ class Ciclista(atleta):
         else:
             print(f'nao esta andando de bike')
 
-atleta = atleta(59)
+atleta = Atleta(59)
 atleta.bike()
