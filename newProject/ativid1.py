@@ -9,7 +9,7 @@ banco = mysql.connector.connect(
 print(banco)
 
 meucursor = banco.cursor()
-pesquisa = 'select * from alunos;'
+pesquisa = 'select * from funcionarios;'
 meucursor.execute(pesquisa)
 resultado = meucursor.fetchall()
 for x in resultado:
